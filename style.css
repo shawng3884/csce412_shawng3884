@@ -1,0 +1,78 @@
+:root {
+    --tamu-maroon: #500000;
+    --tamu-white: #ffffff;
+    --tamu-gray: #333333;
+    --tamu-accent: #f4f4f4;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--tamu-accent);
+    color: var(--tamu-gray);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--tamu-maroon);
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 4px;
+}
+
+h2 {
+    color: var(--tamu-maroon);
+    font-weight: normal;
+    border-bottom: 1px solid #ddd;
+}
+
+.diagram-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.diagram-container img {
+    max-width: 100%;
+    border: 1px solid #ccc;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+    font-weight: normal;
+}
+
+th {
+    background-color: #f8f8f8;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 20px;
+}

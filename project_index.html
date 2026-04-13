@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Shawn Gao - Main Hub" />
+  <title>Shawn Gao</title>
+  <link rel="shortcut icon" href="./assets/letter-s.png" />
+  <style>
+    :root {
+      --tamu-maroon: #500000;
+      --tamu-white: #ffffff;
+      --tamu-gray: #333333;
+      --tamu-accent: #f4f4f4;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: var(--tamu-accent);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      color: var(--tamu-gray);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--tamu-maroon);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      font-weight: normal;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      background: white;
+      padding: 40px;
+      border-radius: 4px;
+      flex: 1;
+    }
+
+    h2 {
+      color: var(--tamu-maroon);
+      font-weight: normal;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 10px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .project-description {
+      margin-bottom: 40px;
+      line-height: 1.8;
+    }
+
+    .project-description p {
+      margin-bottom: 15px;
+      text-align: left;
+    }
+
+    .project-description strong {
+      color: var(--tamu-maroon);
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .link-card {
+      background: var(--tamu-accent);
+      border: 1px solid #ddd;
+      border-left: 4px solid var(--tamu-maroon);
+      padding: 20px;
+      text-decoration: none;
+      color: var(--tamu-gray);
+      transition: all 0.3s ease;
+      display: block;
+    }
+
+    .link-card:hover {
+      background: #fff;
+      border-left-width: 6px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transform: translateX(5px);
+    }
+
+    .link-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+      color: var(--tamu-maroon);
+      font-weight: normal;
+    }
+
+    .link-card p {
+      font-size: 0.95rem;
+      margin: 0;
+      color: var(--tamu-gray);
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .container {
+        margin: 20px;
+        padding: 20px;
+      }
+
+      .link-card h3 {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Shawn Gao</h1>
+    <p>Texas A&M University</p>
+  </header>
+
+  <div class="container">
+    <h2>Load Balancer Simulation Project</h2>
+    
+    <div class="project-description">
+      <p>
+        This project simulates a large company's load-balancing system for managing web requests. 
+        The load balancer will dynamically allocate and deallocate web servers, 
+        trying to keep the request queue balanced between 50-80 requests per server.
+      </p>
+      <p>
+        <strong>Features:</strong> Request generation with random IP addresses and processing times, 
+        dynamic server management, IP range blocking for firewall/DOS prevention, 
+        and logging with color-coded output.
+      </p>
+    </div>
+
+    <h2>Navigation</h2>
+
+    <div class="links">
+      <a href="diagram.html" class="link-card">
+        <h3>Diagram</h3>
+        <p>View Project Workflow Diagram</p>
+      </a>
+
+      <a href="docs/html/index.html" class="link-card">
+        <h3>Documentation</h3>
+        <p>Browse the Doxygen technical documentation</p>
+      </a>
+    </div>
+  </div>
+</body>
+
+</html>

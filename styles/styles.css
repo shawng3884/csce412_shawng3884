@@ -1,0 +1,51 @@
+@import url(./globals.css);
+@import url(./utils.css);
+@import url(./nav.css);
+@import url(./landing.css);
+@import url(./hero.css);
+@import url(./projects.css);
+@import url(./experience.css);
+@import url(./contact.css);
+@import url(./animations.css);
+@import url(./loader.css);
+
+
+
+
+@media screen and (max-width: 31.24rem) {
+  .typed-container {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 31.25rem) {
+  h2 {
+    font-size: 6rem;
+    margin-bottom: 6rem;
+  }
+
+  .typed-container {
+    height: auto;
+  }
+
+}
+
+@media screen and (min-width: 55rem) {
+  .wrapper {
+    padding: 0 32px;
+  }
+
+}
+
+@media screen and (min-width: 75rem) {
+  .wrapper {
+    padding: 0;
+  }
+}
+
+
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

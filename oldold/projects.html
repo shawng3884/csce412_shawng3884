@@ -1,0 +1,138 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shawn Gao - Projects</title>
+    <link id="theme-link" rel="stylesheet" href="light.css">
+
+    <style>
+        body {
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-left">
+        <img class="mode-icon" id="light-dark" onclick="changetheme()" src="sun.png"></img>
+        <a class="title">Shawn Gao</a>
+    </div>
+    
+    <div class="header-middle">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="resume.html">Resume</a>
+        <a href="service.html">Service</a>
+    </div>
+    
+    <div class="header-right">
+        <a href="https://www.linkedin.com/in/shawng3884" target="_blank">
+            <img src="linkedin.png" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/shawng3884" target="_blank">
+            <img src="github.png" alt="GitHub">
+        </a>
+        <a href="https://people.tamu.edu/~shawng3884">
+            <img src="web.png" alt="Website">
+        </a>
+    </div>
+</header>
+
+<div class="container">
+    <div class="left">
+        <div class="project">
+            <img src="panda2.png" width="600" height=auto>
+            <h3>Panda Express Full Stack Website</h3>
+            <p>JavaScript, HTML, CSS, C++, PostgreSQL, Node.JS</p>
+            <p>For this project, we created a modified POS system for Panda Express. We designed and created both the manager and customer views,
+                initialy through JavaFX and later moving onto a JavaScript website hosted on Render, as well a database that would store information about orders,
+                 employees, and inventory. We also integrated queries into our front-end GUI, so that managers can see trends 
+                 in sales and order history. We wrote scripts to generate about a million
+                dollars and a year's worth of sales that populated the database. 
+                Throughout the whole process, we followed the Agile development methodology.</p>
+        </div>
+
+        <div class="project">
+            <img src="graphics3.png" width="500" height=auto>
+            <h3>Shaders Project</h3>
+            <p>OpenGL</p>
+            <p>This project was one of a series in my Computer Graphics class, which had me implement my own rasterizer on CPU 
+                with three different coloring modes, and using barycentric coordinates. 
+                I had the oppurtunity to work with OpenGL to implement my own z-buffer as well as
+                a clipping algorithm to display different objects.</p>
+        </div>
+
+        
+        <div class="project">
+            <img src="graphics2.png" width="500" height=auto>
+            <h3>Hierarchical Modeling and Animations Project</h3>
+            <p>OpenGL</p>
+            <p>This project was one of a series in my Computer Graphics class, and it had me model a basic robot in OpenGL that could be
+                transformed by a user. I used matrix stacks to create hierarchical transformations, where connected parts of the robot
+                would move together. In the end, I put everything together with an animation of the robot running.
+            </p>
+        </div>
+        
+
+        <div class="project">
+            <img src="magnet.png" width="600" height=auto>
+            <h3>Accessible HCI with Magnetic Stylus</h3>
+            <p>C++, Python</p>
+            <p>In this research project, we created a platform that performs magnet tracking on a stylus, estimating its position and orientation 
+                over time. The stylus can move freely through 3D space, and does not need an external power source.</p>
+            <p>Currently, I am working on using the stylus system to detect a user's specific 
+                pattern as they sign into a system and recognize their movements using machine learning. 
+                The result would be a kinesthetic signature that is unique to each person, even if 
+                they are punching the same code into the same keypad as another person who is authorized.
+                This feature could also be used for handwriting verification, since having another dimension of space for a
+                signature, as well as the time and orientation data of the pen as it travels, would better prevent
+                forgery.</p>
+        </div>
+
+        <div class="project">
+            <img src="wordle.png" width="450" height=auto>
+            <h3>Wordle Game</h3>
+            <p>Java</p>
+            <p>For my CSCE314 Final Project, I created a <a href="https://www.nytimes.com/games/wordle" target=”_blank” >Wordle</a> clone. 
+                The game includes a responsive GUI made using JavaFX and no other plugins, displaying a window for a Wordle board 
+                as well a window for game statistics. The word is randomly retrieved from a file containing all 5-letter words in the 
+                English language.</p> 
+            <p>The game data is automatically tracked and saved to a local file between rounds, and is also saved
+                after each guess, so that a single game can be loaded later and played continuously throughout sessions.</p>
+        </div>
+
+        <div class="project">
+            <img src="bank.png" width="600" height="auto">
+            <h3>CAD Bank Design</h3>
+            <p>Autodesk Revit, Autodesk AutoCAD</p>
+            <p>For an <a href="https://www.skillsusa.org/competitions/skillsusa-championships/categories-and-descriptions/" target="_blank">
+                Architectural Drafting competition</a>, I designed and modeled a mid-sized branch of a national bank.  
+                The completed project included site, floor, and roof plans, as well as electrical, plumbing, door, and window schedules.</p>
+            <p>One main aspect I focused on was the accessibility of various areas for different groups of people: customers, employees, 
+                and security. Since it was a commercial building, I had to research ADA guidelines and alter my design in order to conform to
+                those standards.</p>
+            <p>Throughout the project, I had to learn many aspects of architectural design as well as 
+                <a href="https://www.autodesk.com/products/revit/overview" target="_blank">Autodesk Revit 2019</a>, a drafting and 
+                modeling software. At the end, I created a scale model of the building using plastic sheets and foam. 
+                The project won a Superior award at the state conference.</p>
+        </div>
+    </div>
+
+    <div class="right">
+        <img src="Shawn_Profile_Zoomed.JPG">
+        <div class="text-content">            
+            <h2>Shawn Gao</h2>
+            <p>Texas A&M University</p>
+            <p>shawng3884@gmail.com</p>
+        </div>
+    </div>
+</div>
+
+<script src="functions.js"></script>
+<script>
+    document.body.style.visibility = 'visible';
+</script>
+</body>
+</html>

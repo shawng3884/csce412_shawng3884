@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Load Balancer Project Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Load Balancer Project Design</h1>
+    <p>Shawn Gao - Texas A&M University</p>
+</header>
+
+<div class="container">
+    <h2>Project Workflow Diagram</h2>
+    <div class="diagram-container">
+        <img src="flowdiagram.png" alt="Flow Diagram">
+    </div>
+
+    <h2>How the System Works</h2>
+    <ul>
+        <li>The simulation starts by creating a queue of requests based on the number of servers.</li>
+        <li>Each request includes an input IP, an output IP, and the time needed to finish.</li>
+        <li>The load balancer checks for empty servers every clock cycle to assign new jobs.</li>
+        <li>If the queue gets too long, the system adds a new server to help with the load.</li>
+        <li>If the queue gets too short, the system removes a server to save resources.</li>
+        <li>The servers will process the jobs, and increment the clock cycle.</li>
+        <li>All events and changes are recorded in a log file for review.</li>
+    </ul>
+</div>
+</body>
+</html>

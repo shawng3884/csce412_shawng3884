@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shawn Gao — Software Engineer</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Meta -->
+  <meta name="description" content="Shawn Gao — Software engineer. Portfolio showcasing projects, skills, and contact." />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Fav icon (simple SVG data url) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48'%3E%3Crect width='100%25' height='100%25' rx='10' fill='%23222'/%3E%3Ctext x='50%25' y='55%25' font-size='22' text-anchor='middle' fill='%23fff' font-family='Inter, Arial' font-weight='700'%3ESG%3C/text%3E%3C/svg%3E">
+
+</head>
+<body>
+  <main id="page">
+
+    <!-- NAV -->
+    <header class="nav">
+      <div class="container nav-inner">
+        <a class="brand" href="#hero">Shawn Gao</a>
+
+        <nav class="nav-links" id="navLinks">
+          <a href="#projects">Projects</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button id="colorToggle" aria-label="Toggle color mode" class="btn-ghost">🌙</button>
+          <button id="menuBtn" aria-label="Open menu" class="hamburger" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <h1 class="heading-1">Hi — I'm <span class="accent">Shawn</span>.</h1>
+          <p class="lead">Software engineer &amp; aspiring data scientist. I build reliable systems and polished user experiences. Currently exploring cloud security, distributed systems, and interactive visualizations.</p>
+
+          <div class="cta-row">
+            <a class="btn-primary" href="#projects">See my work</a>
+            <a class="btn-outline" href="#contact">Get in touch</a>
+          </div>
+
+          <div class="quick-links">
+            <a href="#" class="pill">Open to internships</a>
+            <a href="#" class="pill">Available: Summer 2026</a>
+            <a href="#" class="pill">Resume (PDF)</a>
+          </div>
+        </div>
+
+        <div class="hero-right" aria-hidden="false">
+          <div class="card-profile">
+            <div class="profile-avatar" role="img" aria-label="Profile avatar">
+              <!-- Replace with your image or SVG -->
+              <svg viewBox="0 0 120 120"><defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#6EE7B7"/><stop offset="1" stop-color="#60A5FA"/></linearGradient></defs><rect rx="20" width="120" height="120" fill="url(#g)"/><text x="50%" y="58%" text-anchor="middle" font-size="44" font-family="Inter, sans-serif" font-weight="700" fill="#022c22">SG</text></svg>
+            </div>
+
+            <div class="profile-meta">
+              <h3>Shawn Gao</h3>
+              <p class="muted">Computer Science & Statistics • Texas A&amp;M</p>
+
+              <ul class="stats">
+                <li><strong>6+</strong><span>Projects</span></li>
+                <li><strong>3</strong><span>Internships</span></li>
+                <li><strong>1</strong><span>Robotics competition</span></li>
+              </ul>
+
+              <div class="socials">
+                <a href="#" aria-label="GitHub">GitHub</a>
+                <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                <a href="#" aria-label="Email">Email</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Selected Projects</h2>
+          <p class="muted">A taste of the systems, visualizations, and apps I’ve shipped.</p>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Project card -->
+          <article class="project-card" data-project='{"title":"Wordle Clone","desc":"A Java + JavaFX Wordle clone with multiplayer and statistics.", "tags":["Java","JavaFX","Game"], "link":"#"}'>
+            <div class="project-media" aria-hidden="true">
+              <svg viewBox="0 0 800 450"><rect width="100%" height="100%" rx="8" fill="#0f172a"/></svg>
+            </div>
+            <div class="project-body">
+              <h3>Wordle Clone</h3>
+              <p class="muted">Final project: polished UI, multiplayer scoreboard, and persistence.</p>
+              <div class="tags"><span>Java</span><span>UI</span><span>Game</span></div>
+              <div class="project-actions">
+                <button class="btn-sm js-open-project">Details</button>
+                <a class="link" href="#">Code ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Duplicate with different placeholders -->
+          <article class="project-card" data-project='{"title":"Predictive Sports Model","desc":"Python logistic regression model to predict NFL games.", "tags":["Python","scikit-learn","Data"], "link":"#"}'>
+            <div class="project-media" aria-hidden="true"><svg viewBox="0 0 800 450"><rect width="100%" height="100%" rx="8" fill="#001219"/></svg></div>
+            <div class="project-body">
+              <h3>Predictive Sports Model</h3>
+              <p class="muted">Feature engineering, team/player metrics, and cross-validation.</p>
+              <div class="tags"><span>Python</span><span>ML</span></div>
+              <div class="project-actions">
+                <button class="btn-sm js-open-project">Details</button>
+                <a class="link" href="#">Demo ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-project='{"title":"GuardDuty Analytics","desc":"Cloud security analytics pipeline for network telemetry.", "tags":["Go","AWS","Distributed"], "link":"#"}'>
+            <div class="project-media" aria-hidden="true"><svg viewBox="0 0 800 450"><rect width="100%" height="100%" rx="8" fill="#04151f"/></svg></div>
+            <div class="project-body">
+              <h3>GuardDuty Analytics</h3>
+              <p class="muted">Large-scale flow log processing and anomaly detection.</p>
+              <div class="tags"><span>AWS</span><span>Streaming</span></div>
+              <div class="project-actions">
+                <button class="btn-sm js-open-project">Details</button>
+                <a class="link" href="#">Read ↗</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT & SKILLS -->
+    <section id="about" class="section alt">
+      <div class="container about-grid">
+        <div>
+          <h2>About me</h2>
+          <p>I’m Shawn, a CS &amp; Statistics student building systems and ML pipelines. I enjoy working on end-to-end projects: from data ingestion and modelling to production deployment and polished UIs.</p>
+          <p class="muted">Interests: cloud security, distributed systems, visualization, and game design.</p>
+
+          <a class="btn-outline" href="#contact">Let's talk</a>
+        </div>
+
+        <div>
+          <h3>Skills</h3>
+          <div class="skill-list">
+            <div class="skill">
+              <div class="skill-name">Languages</div>
+              <div class="skill-bar"><span style="width:85%"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill-name">Systems & Cloud</div>
+              <div class="skill-bar"><span style="width:70%"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill-name">Data & ML</div>
+              <div class="skill-bar"><span style="width:65%"></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Technologies</h2>
+        <div class="tech-grid">
+          <span>Python</span><span>Java</span><span>C/C++</span><span>Go</span><span>AWS</span><span>Docker</span><span>scikit-learn</span><span>React</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section alt-lg">
+      <div class="container contact-grid">
+        <div>
+          <h2>Say hi 👋</h2>
+          <p class="muted">Prefer email? <a href="mailto:you@example.com">you@example.com</a></p>
+
+          <form id="contactForm" class="contact-form" onsubmit="return false;">
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" required placeholder="Your name">
+            </label>
+
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" required placeholder="you@domain.com">
+            </label>
+
+            <label>
+              <span>Message</span>
+              <textarea name="message" rows="5" required placeholder="What would you like to talk about?"></textarea>
+            </label>
+
+            <div class="form-row">
+              <button id="submitBtn" type="submit" class="btn-primary">Send message</button>
+              <button type="reset" class="btn-ghost">Reset</button>
+            </div>
+            <p id="formMsg" class="muted small">This form is a demo — wire it to a server or email service to receive messages.</p>
+          </form>
+        </div>
+
+        <aside class="contact-aside">
+          <div class="contact-card">
+            <h3>Availability</h3>
+            <p class="muted">Open to internships & remote work.</p>
+            <ul>
+              <li>Location: USA</li>
+              <li>Remote-friendly</li>
+              <li>Interests: Cloud, distributed systems</li>
+            </ul>
+            <a class="btn-outline" href="#">Download resume</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <p>© <span id="year"></span> Shawn Gao — Built with ☕ & code.</p>
+        <nav class="footer-links"><a href="#hero">Top</a><a href="#">Privacy</a></nav>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Project modal template -->
+  <dialog id="projectModal" class="project-modal" aria-hidden="true"></dialog>
+
+  <!-- Scripts -->
+  <script src="main.js"></script>
+</body>
+</html>

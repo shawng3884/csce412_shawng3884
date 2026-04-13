@@ -1,0 +1,254 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shawn Gao - AI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            font-family: Calibri, sans-serif;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 12px;
+            background-color: #E2DAD6;
+            border-bottom: 3px solid #ffffff;
+        }
+
+        .header-left {
+            font-size: 1.6em;
+            font-weight: bolder;
+            padding-left: 80px;
+        }
+
+        .header-left .title {
+            font-size: 1.25em;
+        }
+
+        .mode-icon {
+            width: 0.8em;
+            height: 0.8em;
+            padding-right: 10px;
+        }
+
+        .header-middle {
+            display: flex;
+            justify-content: center;
+            flex-grow: 1;
+        }
+
+        .header-middle a {
+            text-decoration: none;
+            color: black;
+            background-color: #E2DAD6;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 5px;
+            font-size: 1.15em;
+            transition: background-color 0.2s, transform 0.2s;
+        }
+
+        .header-middle a:hover {
+            background-color: white;
+            transform: scale(1.1);
+        }
+
+        .header-right {
+            display: flex;
+            justify-content: center;
+            padding-right: 80px;
+        }
+
+        .header-right a {
+            margin: 0 10px;
+        }
+
+        .header-right img {
+            background-color: white;
+            border-radius: 50%;
+            border: 3px solid white;
+            width: 30px;
+            height: 30px;
+            transition: background-color 0.2s, transform 0.2s;
+        }
+
+        .header-right img:hover {
+            background-color: rgb(232, 232, 232);
+            transform: scale(1.1);
+        }
+        .container {
+            margin: 20px;
+        }
+        
+        .info-box {
+            border: 2px solid #ccc;
+            padding: 15px;
+            margin: 20px auto;
+            max-width: 600px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        .game-container {
+            margin-top: 20px;
+        }
+        .word-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 40px);
+            grid-gap: 10px;
+            justify-content: center;
+        }
+        .word-grid div {
+            width: 40px;
+            height: 40px;
+            border: 1px solid #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            background-color: white;
+            color: black;
+        }
+        .correct {
+            background-color: #6aaa64 !important; /* Green */
+            color: white !important;
+        }
+        .present {
+            background-color: #c9b458 !important; /* Yellow */
+            color: white !important;
+        }
+        .absent {
+            background-color: #787c7e !important; /* Gray */
+            color: white !important;
+        }
+        input[type="text"] {
+            padding: 10px;
+            font-size: 18px;
+            margin-top: 20px;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-left">
+        <img class="mode-icon" id="light-dark" onclick="theme()" src="sun.png" alt="Toggle Theme">
+        <a class="title">Shawn Gao</a>
+    </div>
+    
+    <div class="header-middle">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="resume.html">Resume</a>
+        <a href="service.html">Service</a>
+        <a href="personal.html">AI</a>
+    </div>
+    
+    <div class="header-right">
+        <a href="https://www.linkedin.com/in/shawng3884" target="_blank">
+            <img src="linkedin.png" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/shawng3884" target="_blank">
+            <img src="github.png" alt="GitHub">
+        </a>
+        <a href="https://people.tamu.edu/~shawng3884" target="_blank">
+            <img src="web.png" alt="Website">
+        </a>
+    </div>
+</header>
+
+<div class="container">
+    <div class="info-box">
+        <p>This is an AI-generated page, used to demonstrate the power of AI. I gave this prompt to Chat-GPT in order 
+            to create what you see below: "Create a copy of the game Wordle on this page using HTML/CSS and JavaScript."</p>
+    </div>
+
+    <div class="game-container">
+        <div class="word-grid" id="word-grid"></div>
+        <input type="text" id="guess-input" maxlength="5" placeholder="Enter your guess" onkeypress="handleKeyPress(event)">
+        <button onclick="submitGuess()">Submit Guess</button>
+        <p id="message"></p>
+    </div>
+</div>
+
+<script>
+    const words = ['APPLE', 'BRAIN', 'CLOUD', 'HEART', 'SMART'];
+    const answer = words[Math.floor(Math.random() * words.length)];
+    const maxAttempts = 6;
+    let attempts = 0;
+
+    function createGrid() {
+        const grid = document.getElementById('word-grid');
+        grid.innerHTML = '';
+        for (let i = 0; i < maxAttempts * 5; i++) {
+            const cell = document.createElement('div');
+            grid.appendChild(cell);
+        }
+    }
+
+    function handleKeyPress(event) {
+        if (event.key === 'Enter') {
+            submitGuess();
+        }
+    }
+
+    function submitGuess() {
+        const guessInput = document.getElementById('guess-input');
+        const guess = guessInput.value.toUpperCase();
+        guessInput.value = '';
+
+        if (guess.length !== 5) {
+            document.getElementById('message').innerText = 'Please enter a 5-letter word.';
+            return;
+        }
+
+        const gridCells = document.getElementById('word-grid').children;
+        const currentRow = attempts * 5;
+
+        for (let i = 0; i < 5; i++) {
+            const letter = guess[i];
+            const cell = gridCells[currentRow + i];
+
+            cell.innerText = letter;
+
+            if (letter === answer[i]) {
+                cell.classList.add('correct');
+            } else if (answer.includes(letter)) {
+                cell.classList.add('present');
+            } else {
+                cell.classList.add('absent');
+            }
+        }
+
+        attempts++;
+        
+        if (guess === answer) {
+            document.getElementById('message').innerText = 'Congratulations! You guessed the word!';
+            document.getElementById('guess-input').disabled = true;
+        } else if (attempts === maxAttempts) {
+            document.getElementById('message').innerText = `Game Over! The word was ${answer}.`;
+            document.getElementById('guess-input').disabled = true;
+        }
+    }
+
+    createGrid();
+</script>
+
+<script src="functions.js"></script>
+</body>
+</html>

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Renas Hassan" />
+  <title>Shawn Gao</title>
+  <link rel="shortcut icon" href="./assets/letter-s.png" />
+  <link rel="stylesheet" href="./styles/styles.css" />
+  <script type="module" src="./javascript/index.js"></script>
+  <script async src="https://cdn.splitbee.io/sb.js"></script>
+</head>
+
+<body>
+  <div id="loader" class="zoomIn">
+    <div class="spinner-box">
+      <div class="blue-orbit leo"></div>
+
+      <div class="green-orbit leo"></div>
+
+      <div class="red-orbit leo"></div>
+
+      <div class="white-orbit w1 leo"></div>
+      <div class="white-orbit w2 leo"></div>
+      <div class="white-orbit w3 leo"></div>
+    </div>
+  </div>
+
+  <div id="container">
+
+    <nav class="nav">
+      <div class="wrapper">
+        <section class="nav__mobile">
+
+          <aside class="nav__hamburger">
+            <i class="nav__hamburger-icon fa-solid fa-bars"></i>
+            <i class="nav__hamburger-close fa-solid fa-xmark"></i>
+          </aside>
+        </section>
+
+        <section class="nav__desktop">
+
+          <section class="nav__desktop-links">
+            <a class="desktop-hero active-link link hidden fromTop" href="#hero"><i class="fa-solid fa-house"></i>
+              Home</a>
+            <a class="desktop-projects link hidden fromTop" href="#projects"><i class="fa-solid fa-diagram-project"></i>
+              Projects</a>
+            <a class="desktop-experience link hidden fromTop" href="#experience"><i class="fa-solid fa-briefcase"></i>
+              Experience</a>
+            <a class="desktop-contact link hidden fromTop" href="#contact"><i class="fa-solid fa-address-card"></i>
+              Contact</a>
+          </section>
+          <article class="nav__desktop-socials">
+            <a class="link hidden fromTop" href="https://linkedin.com/in/shawng3884" target="_blank"
+              aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a class="link hidden fromTop" href="mailto:shawng3884@gmail.com" aria-label="Email" title="Email"><i
+                class="fa-solid fa-envelope"></i></a>
+            <a class="link hidden fromTop" href="https://github.com/meganide" target="_blank" aria-label="Github"
+              title="Github"><i class="fa-brands fa-github"></i></a>
+          </article>
+          <a class="link hidden fromTop" href="./assets/Resume.pdf" area-label="Resume" title="Resume"
+            target="_blank"><button class="button button--secondary link hidden fromTop">Resume</button></a>
+        </section>
+      </div>
+    </nav>
+
+    <aside class="sidebar-mobile">
+      <ul class="sidebar-mobile__list">
+        <li>
+          <a class="sidebar-mobile__item mobile-hero active-link" href="#hero"><i class="fa-solid fa-house"></i>
+            Home</a>
+        </li>
+        <li>
+          <a class="sidebar-mobile__item mobile-projects" href="#projects"><i class="fa-solid fa-diagram-project"></i>
+            Projects</a>
+        </li>
+        <li>
+          <a class="sidebar-mobile__item mobile-experience" href="#experience"><i class="fa-solid fa-briefcase"></i>
+            Experience</a>
+        </li>
+        <li>
+          <a class="sidebar-mobile__item" href="https://linkedin.com/in/shawng3884" target="_blank"><i
+              class="fa-brands fa-linkedin"></i>LinkedIn</a>
+        </li>
+        <li>
+          <a class="sidebar-mobile__item" href="mailto:shawng3884@gmail.com"><i class="fa-solid fa-envelope"></i>
+            Email</a>
+        </li>
+        <li>
+          <a class="sidebar-mobile__item" href="https://github.com/shawng3884" target="_blank"><i
+              class="fa-brands fa-github"></i> Github</a>
+        </li>
+        <li>
+          <a class="sidebar-mobile__item mobile-contact" href="#contact"><i class="fa-solid fa-address-card"></i>
+            Contact</a>
+        </li>
+        <li>
+          <a class="sidebar-mobile__item mobile-contact" href="./assets/Resume.pdf" target="_blank"><i
+              class="fa-solid fa-file"></i> Resume</a>
+        </li>
+      </ul>
+    </aside>
+
+    <main>
+      <section class="landing">
+        <img src="./assets/images/background.png" class="background" alt="" />
+        <img src="./assets/images/foreground.png" class="foreground" alt="" />
+
+        <div class="hero-container" id="hero">
+          <div class="wrapper">
+            <section class="hero">
+              <section class="hero__left">
+                <h1 class="hero__heading prevent-select link hidden fromTop">Shawn Gao</h1>
+                <div id="typed-strings">
+                  <p>A <span class="hero__purple">Software Developer</span></p>
+                  <p>A <span class="hero__green">Music Producer</span></p>
+                  <p>A <span class="hero__blue">Networking Enthusiast</span></p>
+                  <p>A <span class="hero__next">student for life</span></p>
+                </div>
+                <div class="typed-container prevent-select link hidden fromTop">
+                  <span id="typed"></span>
+                </div>
+                <p class="hero__paragraph link hidden fromTop">
+                  Howdy! I'm a class of 2026 computer science major who is passionate about using technology to solve
+                  problems.
+                </p>
+                <a href="#contact" class="hero__contact-btn">
+                  <button class="button hero__button link hidden fromTop">
+                    Let's Connect <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </a>
+              </section>
+              <article class="hero__right">
+                <img class="hero__astronaut" src="./assets/images/shawn-profile.jpg" alt="Shawn Gao Profile" />
+              </article>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <div class="container-projects">
+        <div class="wrapper">
+          <section class="projects" id="projects">
+            <h2 class="projects__heading">Projects</h2>
+            <article class="projects__project hidden fromRight">
+              <article class="projects__laptop-mockup">
+                <video disableRemotePlayback muted autoplay playsinline>
+                  <source src="./assets/videos/ghost-frames.webm" type='video/webm;codecs="vp9"' onerror="fallback(parentNode);
+                  function fallback(video) {;
+                    while (video.hasChildNodes()) {
+                      if (video.firstChild instanceof HTMLSourceElement) video.removeChild(video.firstChild);
+                      else video.parentNode.insertBefore(video.firstChild, video);
+                    }
+                    video.parentNode.removeChild(video);
+                  }" />
+                  <img src="./assets/videos/ghost-frames-ios.png" alt="rsduel" loading="lazy" />
+                </video>
+              </article>
+              <section class="projects__info">
+                <h3 class="projects__title">GHOST FRAMES</h3>
+                <p class="projects__paragraph">
+                  We were sponsored by Lockheed Martin to create a secure communication system by injecting custom
+                  802.11 frames to transmit messages outside the standard network stack.
+                  We also created a TCP-like transmission protocol for packet parsing, data reconstruction, and error
+                  correction, and bundled it in a desktop application to easily transfer messages and files.
+                </p>
+
+                <section class="projects__buttons">
+                  <button class="button" disabled style="opacity: 0.5; cursor: not-allowed;">Demo</button>
+                  <a href="https://github.com/mattcspeights/GhostFrames" target="_blank" rel="noopener noreferrer">
+                    <button class="button">Code</button>
+                  </a>
+                </section>
+              </section>
+            </article>
+            <article class="projects__project projects__project--reverse hidden fromLeft">
+              <article class="projects__laptop-mockup">
+                <video disableRemotePlayback muted autoplay playsinline>
+                  <source src="./assets/videos/yaf.webm" type="video/webm" onerror="fallback(parentNode);
+                    function fallback(video) {;
+                  while (video.hasChildNodes()) {
+                    if (video.firstChild instanceof HTMLSourceElement) video.removeChild(video.firstChild);
+                    else video.parentNode.insertBefore(video.firstChild, video);
+                  }
+                  video.parentNode.removeChild(video);
+                }" />
+                  <img src="./assets/videos/yaf-ios.png" alt="tweeter" loading="lazy" />
+                </video>
+              </article>
+              <section class="projects__info yaf">
+                <h3 class="projects__title">YAF</h3>
+                <p class="projects__paragraph">
+                  We created a web app for the organization Young Americans for Freedom, for members to be able to sign
+                  in to view upcoming
+                  events, track their meeting points, and communicate with other members in messaging groups.
+                </p>
+                <section class="projects__buttons">
+                  <a href="https://project-3-team-4g.onrender.com/" target="_blank" rel="noopener noreferrer">
+                    <button class="button">Demo</button>
+                  </a>
+                  <a href="https://github.com/CSCE331-Fall2024/project-3-team-4g/tree/main" target="_blank"
+                    rel="noopener noreferrer">
+                    <button class="button">Code</button>
+                  </a>
+                </section>
+              </section>
+            </article>
+
+            <article class="projects__project projects__project--enginers hidden fromRight">
+              <article class="projects__laptop-mockup">
+                <video disableRemotePlayback muted autoplay loop playsinline>
+                  <source src="./assets/videos/panda.webm" type="video/webm" onerror="fallback(parentNode);
+                  function fallback(video) {;
+                    while (video.hasChildNodes()) {
+                      if (video.firstChild instanceof HTMLSourceElement) video.removeChild(video.firstChild);
+                      else video.parentNode.insertBefore(video.firstChild, video);
+                    }
+                    video.parentNode.removeChild(video);
+                  }" />
+                  <img src="./assets/videos/panda-ios.png" alt="engineers" loading="lazy" />
+                </video>
+              </article>
+              <section class="projects__info projects__info--panda">
+                <h3 class="projects__title">PANDA EXPRESS</h3>
+                <p class="projects__paragraph">
+                  We developed a full-stack point of sale prototype for a restaurant. This application includes cashier
+                  features for employees, inventory and revenue analysis for management, and even a customer-facing
+                  online checkout system.
+                </p>
+                <section class="projects__buttons">
+                  <a href="https://project-3-team-4g.onrender.com/" target="_blank" rel="noopener noreferrer">
+                    <button class="button">Demo</button>
+                  </a>
+                  <a href="https://github.com/CSCE331-Fall2024/project-3-team-4g/tree/main" target="_blank"
+                    rel="noopener noreferrer">
+                    <button class="button">Code</button>
+                  </a>
+                </section>
+              </section>
+            </article>
+
+            <article class="projects__project project__your-project projects__your-project hidden fromLeft">
+              <article class="projects__laptop-mockup">
+                <video disableRemotePlayback muted autoplay playsinline>
+                  <source src="./assets/videos/build.webm" type="video/webm" onerror="fallback(parentNode);
+                  function fallback(video) {;
+                    while (video.hasChildNodes()) {
+                      if (video.firstChild instanceof HTMLSourceElement) video.removeChild(video.firstChild);
+                      else video.parentNode.insertBefore(video.firstChild, video);
+                    }
+                    video.parentNode.removeChild(video);
+                  }" />
+                  <img src="./assets/videos/build-ios.png" alt="your project" loading="lazy" />
+                </video>
+              </article>
+
+              <section class="projects__info projects__info--build">
+                <h3 class="projects__title">BUILD TAMU</h3>
+                <p class="projects__paragraph">
+                  I revamped the website of my volunteer organization, BUILD, fixing many styling issues, improving the
+                  visibility and accessibility, and also developing the member portal.
+                </p>
+                <a href="https://www.buildtamu.org/" target="_blank" rel="noopener noreferrer">
+                  <button class="button">Check it out!</button>
+                </a>
+              </section>
+            </article>
+            <!-- <button class="button button--secondary projects__view-all">View All Projects</button> -->
+          </section>
+        </div>
+      </div>
+
+      <div class="container-experience">
+        <div class="wrapper">
+          <section class="experience" id="experience">
+            <h2 class="experience__heading">Experience</h2>
+            <div class="experience__timeline">
+              <article class="experience__item hidden fromLeft">
+                <div class="experience__date">Jan 2025 - Present</div>
+                <div class="experience__content">
+                  <h3 class="experience__title">Texas A&M University</h3>
+                  <h4 class="experience__company">IT Helpdesk Technician - Dept. of Electrical & Computer Engineering
+                  </h4>
+                  <p class="experience__description">
+                    Resolved issues with printers, PCs, laptops, and meeting room technology, as well as network
+                    problems. Assisted faculty and graduate students with research software and advised on tech best
+                    practices.
+                  </p>
+                  <div class="experience__technologies">
+                    <span class="tech-tag">Network Troubleshooting</span>
+                    <span class="tech-tag">Technical Support</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="experience__item hidden fromRight">
+                <div class="experience__date">May 2025 - Aug 2025</div>
+                <div class="experience__content">
+                  <h3 class="experience__title">Amazon Web Services</h3>
+                  <h4 class="experience__company">Software Development Engineer Intern - Amazon GuardDuty</h4>
+                  <p class="experience__description">
+                    Implemented efficient metrics logging in a Spark processor that consumes over 10 billion VPC Flow
+                    Logs
+                    per minute in the largest region. Collaborated with security engineers to build automated dashboards
+                    and provided
+                    actionable insights into detections, leading to a lower false positive rate in detecting Brute Force
+                    and DoS attacks.
+                  </p>
+                  <div class="experience__technologies">
+                    <span class="tech-tag">AWS</span>
+                    <span class="tech-tag">TypeScript</span>
+                    <span class="tech-tag">Scala</span>
+                    <span class="tech-tag">Apache Spark</span>
+                    <span class="tech-tag">Data Analytics</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="experience__item hidden fromLeft">
+                <div class="experience__date">May 2024 - Jan 2025</div>
+                <div class="experience__content">
+                  <h3 class="experience__title">Texas A&M University</h3>
+                  <h4 class="experience__company">Undergraduate Researcher - Sketch Recognition Lab</h4>
+                  <p class="experience__description">
+                    Explored applications of magnets and ultrasonics for accessible human-computer interaction.
+                    Improved a particle swarm optimization problem to find the position and orientation of a stylus
+                    above an array of magnetometers
+                    and implemented machine learning using a Hidden Markov Model to recognize signatures in 3D space.
+                  </p>
+                  <div class="experience__technologies">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">C++</span>
+                    <span class="tech-tag">scikit-learn</span>
+                    <span class="tech-tag">Raspberry Pi</span>
+                    <span class="tech-tag">HCI</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="experience__item hidden fromRight">
+                <div class="experience__date">Aug 2022 - Feb 2023</div>
+                <div class="experience__content">
+                  <h3 class="experience__title">Reynolds & Reynolds</h3>
+                  <h4 class="experience__company">IT Bench Technician</h4>
+                  <p class="experience__description">
+                    Repaired and restored PCs, network devices, servers, and miscellaneous peripherals.
+                    Maintained documentation and work history on parts, equipment, repairs, and network information.
+                  </p>
+                  <div class="experience__technologies">
+                    <span class="tech-tag">Hardware Repair</span>
+                    <span class="tech-tag">Database Management</span>
+                    <span class="tech-tag">Network Devices</span>
+                    <span class="tech-tag">Server Maintenance</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div class="container-contact">
+        <div class="wrapper">
+          <section class="contact hidden" id="contact">
+            <h2 class="contact__heading">Contact</h2>
+            <form class="contact__form" id="sendForm">
+              <input type="text" name="name" id="name" placeholder="Name" />
+              <input type="email" name="email" id="email" placeholder="Email" required />
+              <textarea id="message" name="message" cols="10" rows="10" placeholder="Message" required></textarea>
+              <input type="submit" id="sendButton" class="button button--contact" value="Send" />
+              <aside id="form__info" class="hide">
+                <p id="form__popup-txt">Email successfully sent!</p>
+              </aside>
+            </form>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://kit.fontawesome.com/8bb946769b.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  </div>
+</body>
+
+</html>
